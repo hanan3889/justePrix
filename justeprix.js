@@ -38,12 +38,12 @@ function checkPropal() {
   if (numberToFind > numberPropal) {
     //C'est plus )
     resultDiv.innerHTML = "C'est plus ! ";
-    let audio = new Audio("/justePrix/audios/plus.mp3");
+    let audio = new Audio("audios/plus.mp3");
     audio.play();
   } else if (numberToFind < numberPropal) {
     //C'est moins
     resultDiv.innerHTML = "C'est moins !";
-    let audio = new Audio("/justePrix/audios/moins.mp3");
+    let audio = new Audio("audios/moins.mp3");
     audio.play();
   } else if (numberToFind == numberPropal) {
     //C'est gagné
@@ -91,7 +91,7 @@ function launchGame() {
 function endGame(gagne) {
   if (gagne) {
     confetti.launchAnimationConfetti();
-    let audio = new Audio("/justePrix/audios/Bip bip.mp3");
+    let audio = new Audio("audios/Bip bip.mp3");
     audio.play();
     setTimeout(() => {
       confetti.stopAnimationConfetti();
