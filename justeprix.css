@@ -1,0 +1,84 @@
+body {
+  font-family: "Caveat", cursive;
+  background: url(https://josuaowebblog.fr/wp-content/uploads/2021/06/briques.jpg)
+    no-repeat top #000;
+  font-size: "pacifico", cursive;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.effetneon {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px rgb(230, 18, 36),
+    0 0 77px rgb(230, 18, 36), 0 0 100px rgb(230, 18, 36);
+  animation: lumiere 1s infinite linear;
+}
+@keyframes lumiere {
+  0% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px rgb(230, 18, 36),
+      0 0 77px rgb(230, 18, 36), 0 0 100px rgb(230, 18, 36);
+  }
+  25% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 32px rgb(181, 18, 230),
+      0 0 87px rgb(181, 18, 230), 0 0 120px rgb(181, 18, 230);
+  }
+}
+.bandeau {
+  width: 100%;
+  max-height: 500px;
+}
+
+#beginGame {
+  border-radius: 30px;
+  padding: 15px;
+  background-color: white;
+  margin-right: 400px;
+}
+
+.reboursDiv {
+  transition: 0.2;
+  font-size: 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 35px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.reboursDiv.cool {
+  background-color: green;
+}
+
+.reboursDiv.warning {
+  background-color: orange;
+}
+.reboursDiv.danger {
+  background-color: red;
+  animation: suspens 1s infinite;
+  padding: 7px 15px;
+}
+
+#GamePropalDiv {
+  display: none;
+}
+
+@keyframes suspens {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    font-size: 20px;
+  }
+  33% {
+    transform: rotate(-30deg);
+    font-size: 23px;
+  }
+  66% {
+    transform: rotate(30deg);
+    font-size: 23px;
+  }
+}

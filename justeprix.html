@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le juste Prix</title>
+    <link rel="stylesheet" href="/justePrix/justeprix.css" />
+    <link rel="stylesheet" href="../lib/confetti.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik Bubbles"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="effetneon">Le Juste Prix</h1>
+    <div>
+      <img class="bandeau" src="/justePrix/img/justeprix.jpg" />
+      <button id="beginGame"><i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <div id="GamePropalDiv">
+      <input type="number" id="userPropalInput" />
+      <button id="userPropalButton">Go</button>
+    </div>
+
+    <div id="resultDiv"></div>
+
+    <div id="compteARebours" class="reboursDiv"></div>
+
+    <script type="module" src="/justePrix/justeprix.js"></script>
+  </body>
+</html>
